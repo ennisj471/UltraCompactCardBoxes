@@ -2,13 +2,13 @@ cards = [];
 forceBoxLength = 0;
 
 $fn = 60;
-cardThickness = 0.3231333;
-deckTolorance = 0.5;
+cardThickness = 0.34;
+deckTolorance = 0.6;
 slotHeight = 40;
 cardLength = 92;
 cardWidth = 60;
-deckShift = 14;
-deckRotation = 7;
+deckShift = 20;
+deckRotation = 10;
 boxThickness = [2,1,2];
 cardEdgeRadius = 4;
 textPlateThickness = 0.4;

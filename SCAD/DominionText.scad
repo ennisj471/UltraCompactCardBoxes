@@ -1,15 +1,17 @@
 include <DominionBoxHelper.scad>
 
-include <CONFIG_Prosperity.scad>
+include <CONFIG_GuildsCornucopiaV2.scad>
 
-//current_object = "ALL";
-current_object = "TextPlate";
+current_object = "ALL";
+//current_object = "TextPlate";
 //current_object = "Action";
 //current_object = "Reaction";
 //current_object = "Treasure";
 //current_object = "Victory";
 //current_object = "Curse";
 //current_object = "Duration";
+
+function evenodd(x) = (x%2);
 
 translate([
     -0.5 * allCardsThickness, 
@@ -30,6 +32,7 @@ union()
         {
             defineObject(cards[i][2]) color("white")
             {
+				translate([0,0,-5*evenodd(i+1)])
                 cardName(i);
             }
         }
